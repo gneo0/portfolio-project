@@ -1,11 +1,11 @@
 import Banner from "../Banner";
-import { mainFont } from "@/app/layout";
+import { secondaryFont } from "@/app/layout";
 
 export default function Hero() {
   return (
-    <section className="text-center relative h-[calc(100dvh-2.5rem)] mt-10 flex flex-col items-center overflow-hidden">
+    <section id="#hero" className="text-center relative h-[calc(100dvh-2.5rem)] mt-10 flex flex-col items-center overflow-hidden">
       <div
-        className={`${mainFont.className}flex text-8xl sm:text-9xl mt-12 whitespace-nowrap animate-scroll-x-negative`}
+        className={`${secondaryFont.className}flex text-8xl sm:text-9xl mt-12 whitespace-nowrap animate-scroll-x-negative`}
       >
         <span> Hello, I&apos;m Giorgos Neofitou.</span>
         <span> Hello, I&apos;m Giorgos Neofitou.</span>

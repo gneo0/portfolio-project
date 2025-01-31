@@ -1,4 +1,4 @@
-import { mainFont, secondaryFont } from "@/app/layout";
+import { secondaryFont } from "@/app/layout";
 import { TECHNOLOGIES } from "@/utils/constants";
 
 export default function About() {
@@ -9,7 +9,7 @@ export default function About() {
     >
       <article className="sm:w-2/3 sm:h-1/2 flex flex-col justify-center h-full space-y-4">
         <h2
-          className={`sm:text-7xl text-6xl text-accent-color ${mainFont.className}`}
+          className={`sm:text-7xl text-6xl text-accent-color ${secondaryFont.className}`}
         >
           About me
           <span className="decoration-0 inline-block text-white">:</span>
@@ -18,7 +18,7 @@ export default function About() {
           <span className="left-1 text-secondary-color absolute top-0 text-6xl">
             &#10077;
           </span>
-          <blockquote className={`ml-2 ${secondaryFont.className}`}>
+          <blockquote className="ml-2">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nisi
             molestias, soluta ab debitis consectetur ducimus reprehenderit
             maxime pariatur neque dolore iste tenetur excepturi repudiandae!
@@ -29,11 +29,11 @@ export default function About() {
           </span>
         </div>
       </article>
-      <div className="w-full flex flex-col h-1/2 sm:w-[60%] sm:h-1/2 shadow-md shadow-accent-color">
-        <h3 className="border-accent-color bg-accent-color text-primary-color py-1 text-center border border-b-0">
+      <div className="w-full flex flex-col h-1/2 sm:w-[60%] sm:h-1/2 shadow-md shadow-accent-color/50">
+        <h3 className="border-accent-color bg-secondary-color py-1 font-semibold text-center border border-b-0">
           Technologies i use:
         </h3>
-        <ul className="grid grid-cols-[repeat(auto-fit,minmax(100px,1fr))] border border-secondary-color h-full bg-primary-color min-[595px]:grid-cols-2 text-center">
+        <ul className="grid grid-cols-[repeat(auto-fit,minmax(100px,1fr))] border hover:border-accent-color transition-colors ease-linear border-secondary-color border-t-accent-color h-full bg-primary-colors min-[595px]:grid-cols-2 text-center">
           {TECHNOLOGIES.map((tech) => (
             <li key={tech} className="hover:bg-secondary-color pt-2">
               {tech}

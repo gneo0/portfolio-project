@@ -24,3 +24,5 @@ export const TECHNOLOGIES = [
   "Three.js",
   "Go",
 ];
+
+export const SELECTED_REPOS = ["regal-hive", "TaskFlow-pro", "Movie--Verse"];

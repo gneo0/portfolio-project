@@ -4,7 +4,7 @@ export default function Navbar() {
   return (
     <nav className="flex items-center fixed top-0 left-0 z-50 h-10 justify-around w-full py-3">
       <Link
-        href="/"
+        href="#hero"
         className="hover:text-secondary-color hover:bg-accent-color cursor-pointer"
       >
         Logo here
@@ -16,9 +16,9 @@ export default function Navbar() {
         >
           About
         </Link>
-        <li className="hover:text-secondary-color hover:bg-accent-color cursor-pointer px-2 rounded-sm">
+        <Link href='#projects' className="hover:text-secondary-color hover:bg-accent-color cursor-pointer px-2 rounded-sm">
           Projects
-        </li>
+        </Link>
         <li className="hover:text-secondary-color hover:bg-accent-color cursor-pointer px-2 rounded-sm">
           Contact
         </li>

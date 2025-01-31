@@ -2,7 +2,7 @@ import { BANNER_ADJECTIVES } from "../utils/constants";
 
 export default function Banner() {
   return (
-    <div className="absolute bottom-0 bg-accent-color w-full border-y-2 border-secondary-color border-dotted">
+    <div className="absolute bottom-7 -rotate-2 bg-accent-color w-full border-y-2 border-secondary-color border-dotted">
       <ul className="flex w-fulsl gap-10 p-2 text-sm md:text-base animate-scroll-x-positive">
         {[
           ...BANNER_ADJECTIVES,
