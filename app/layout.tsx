@@ -1,6 +1,17 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import localFont from "next/font/local";
+import { Cagliostro, Poppins } from "next/font/google";
+import ParticlesBackground from "@/components/ui/ParticlesBackground";
+
+export const mainFont = localFont({
+  src: "../public/fonts/Philosopher-Regular.ttf",
+});
+
+export const secondaryFont = Poppins({
+  weight: ["400"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -13,8 +24,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`bg-primary-color text-stone-50 antialiased`}>
+    <html lang="en" className="scroll-smooth">
+      <body
+        className={`bg-primary-color ${secondaryFont.className} text-stone-50 antialiased`}
+      >
+        <ParticlesBackground />
         <Navbar />
         {children}
       </body>

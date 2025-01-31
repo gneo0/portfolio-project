@@ -2,7 +2,7 @@ import { BANNER_ADJECTIVES } from "../utils/constants";
 
 export default function Banner() {
   return (
-    <div className="absolute bottom-0 bg-secondary-color w-full border-y border-dotted border-accent-color">
+    <div className="absolute bottom-0 bg-accent-color w-full border-y-2 border-secondary-color border-dotted">
       <ul className="flex w-fulsl gap-10 p-2 text-sm md:text-base animate-scroll-x-positive">
         {[
           ...BANNER_ADJECTIVES,
@@ -12,7 +12,7 @@ export default function Banner() {
         ].map((adjective, i) => (
           <li
             key={adjective + i}
-            className="whitespace-nowrap after:content-['\2055'] last:after:content-none after:ml-6"
+            className="whitespace-nowrap after:content-['\2055'] after:text-secondary-color text-primary-color last:after:content-none after:ml-6"
           >
             {adjective}
           </li>
