@@ -19,13 +19,13 @@ export default {
           "100%": { transform: "translateX(0%)" },
         },
         "scroll-x-negative": {
-          "0%": { transform: "translateX(0%)" },
-          "100%": { transform: "translateX(-100%)" },
+          "0%": { transform: "translateX(50%)" },
+          "100%": { transform: "translateX(-50%)" },
         },
       },
       animation: {
         "scroll-x-positive": "scroll-x-positive 35s linear infinite",
-        "scroll-x-negative": "scroll-x-negative 65s linear infinite",
+        "scroll-x-negative": "scroll-x-negative 80s linear infinite both",
       },
     },
   },

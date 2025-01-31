@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import localFont from "next/font/local";
-import { Cagliostro, Poppins } from "next/font/google";
+import { Poppins } from "next/font/google";
 import ParticlesBackground from "@/components/ui/ParticlesBackground";
 
 export const mainFont = localFont({

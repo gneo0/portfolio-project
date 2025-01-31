@@ -12,7 +12,7 @@ export default function Banner() {
         ].map((adjective, i) => (
           <li
             key={adjective + i}
-            className="whitespace-nowrap after:content-['\2055'] after:text-secondary-color text-primary-color last:after:content-none after:ml-6"
+            className="whitespace-nowrap after:content-['\2055'] after:text-secondary-color text-primary-color/60 last:after:content-none after:ml-6"
           >
             {adjective}
           </li>
