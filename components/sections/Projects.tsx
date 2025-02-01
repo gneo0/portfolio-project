@@ -15,16 +15,16 @@ export default async function Projects() {
   return (
     <section
       id="projects"
-      className="h-[calc(100dvh-2.5rem)] mt-10 border-t border-secondary-color flex flex-col items-center py-4"
+      className="h-[calc(100dvh-2.5rem)] mt-10 border-t overflow-hidden border-secondary-color flex flex-col items-center py-4"
     >
       <h4 className={`${secondaryFont.className} text-6xl`}>
         Personal Projects
       </h4>
-      <ul className="mt-6 w-11/12 max-w-3xl">
+      <ul className="mt-6 w-11/12 max-w-3xl overflow-y-auto">
         {filteredProjects.map((project) => (
           <li
             key={project.id}
-            className="w-full mx-auto mt-4 sm:flex-row p-4 flex flex-col justify-start bg-primary-color gap-4 rounded-md overflow-hidden"
+            className="w-full mx-auto mt-4 sm:flex-row p-4 flex flex-col justify-start sm:justify-center bg-primary-color gap-4 rounded-md overflow-hidden"
           >
             <Image
               width="100"
@@ -33,7 +33,7 @@ export default async function Projects() {
               src="/placeholder.webp"
               alt={`${project.name} photo`}
             />
-            <div className="flex flex-col justify-between">
+            <div className="flex flex-col justify-between w-2/3">
               <div>
                 <h5>{project.name}</h5>
                 <p>{project.description}</p>
