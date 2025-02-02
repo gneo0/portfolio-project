@@ -29,12 +29,12 @@ export default function About() {
           </span>
         </div>
       </article>
-      <div className="w-full flex flex-col h-1/2 sm:w-[60%] sm:h-1/2 shadow-md shadow-accent-color/50">
-        <h3 className="border-accent-color bg-accent-color text-secondary-color py-1 font-semibold text-center border border-b-0">
+      <div className="w-full flex flex-col h-1/2 sm:w-[60%] rounded-b-xl overflow-hidden sm:h-1/2 shadow-md hover:shadow-none transition-all shadow-accent-color/50">
+        <h3 className="border-secondary-color rounded-t-lg bg-primary-color text-accent-color py-2 font-semibold text-center border border-b-0">
           Technologies i use:
         </h3>
         <ul
-          className={`${secondaryFont.className} grid grid-cols-[repeat(auto-fit,minmax(100px,1fr))] border hover:border-accent-color transition-colors ease-linear border-secondary-color border-t-accent-color h-full bg-primary-colors min-[595px]:grid-cols-2 text-center`}
+          className={`${secondaryFont.className} grid grid-cols-[repeat(auto-fit,minmax(100px,1fr))] border rounded-b-xl hover:border-secondary-color transition-colors ease-linear border-accent-color border-t-accent-color h-full bg-primary-colors min-[595px]:grid-cols-2 text-center border-t-0`}
         >
           {TECHNOLOGIES.map((tech) => (
             <li key={tech} className="hover:bg-secondary-color pt-2">
