@@ -22,10 +22,16 @@ export default {
           "0%": { transform: "translateX(50%)" },
           "100%": { transform: "translateX(-50%)" },
         },
+        "fade-down": {
+          "0%": { opacity: "0", top: "-2rem", width: "80%" },
+          "50%": { width: "40%", opacity: "0.3" },
+          "100%": { opacity: "1", top: "0.5rem" },
+        },
       },
       animation: {
         "scroll-x-positive": "scroll-x-positive 35s linear infinite",
         "scroll-x-negative": "scroll-x-negative 80s linear infinite both",
+        "fade-down": "fade-down 0.5s linear",
       },
     },
   },
