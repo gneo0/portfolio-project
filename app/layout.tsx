@@ -4,7 +4,6 @@ import { Poppins } from "next/font/google";
 import localFont from "next/font/local";
 import Navbar from "@/components/Navbar";
 import ParticlesBackground from "@/components/ui/ParticlesBackground";
-import Footer from "@/components/Footer";
 
 export const secondaryFont = localFont({
   src: "../public/fonts/Philosopher-Regular.ttf",
@@ -29,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth selection:bg-secondary-color">
       <body
-        className={`bg-primary-color text-sm sm:text-base ${mainFont.className} text-stone-50 antialiased`}
+        className={`bg-primary-color text-sm sm:text-base w-full ${mainFont.className} text-stone-50 antialiased`}
       >
         <ParticlesBackground />
         <Navbar />
