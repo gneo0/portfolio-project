@@ -1,10 +1,12 @@
-import { secondaryFont } from "@/app/layout";
 import Link from "next/link";
 import { HiArrowUpRight } from "react-icons/hi2";
 
+import ScrollTopBtn from "./ui/ScrollTopBtn";
+import { secondaryFont } from "@/app/layout";
+
 export default function Footer() {
   return (
-    <section className="h-96 bg-secondary-color rounded-t-2xl">
+    <section className="h-96 relative bg-secondary-color rounded-t-2xl">
       <div className="flex flex-col items-center w-11/12 max-w-xl gap-1 pt-12 mx-auto text-center">
         <h5 className={`text-4xl ${secondaryFont.className}`}>
           Let&apos;s <span className="italic">Connect</span>
@@ -20,6 +22,7 @@ export default function Footer() {
           </span>
         </Link>
       </div>
+      <ScrollTopBtn/>
     </section>
   );
 }

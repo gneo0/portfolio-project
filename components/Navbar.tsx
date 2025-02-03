@@ -17,7 +17,7 @@ export default function Navbar() {
   return (
     <nav
       className={`flex items-center fixed top-0 left-0 z-50 h-10 justify-around w-full py-3 ${
-        isScrolled ? "bg-secondary-color w-96 left-1/2 -translate-x-1/2 top-2 rounded-full" : ""
+        isScrolled ? "bg-secondary-color w-1/2 top-2 rounded-full" : ""
       }`}
     >
       <Link
