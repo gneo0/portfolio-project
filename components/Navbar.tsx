@@ -30,22 +30,29 @@ export default function Navbar() {
       >
         Logo here
       </Link>
-      <ul className="flex space-x-4">
+      <ul
+        className={`flex space-x-4 ${
+          isScrolled ? "border border-accent-color/50 w-[95%] justify-center rounded-full py-1 bg-primary-color" : ""
+        }`}
+      >
         <Link
           href="#about"
-          className="hover:text-secondary-color hover:bg-accent-color px-2 rounded-sm cursor-pointer"
+          className="hover:text-secondary-color hover:bg-accent-color px-4 rounded-xl cursor-pointer"
         >
           About
         </Link>
         <Link
           href="#projects"
-          className="hover:text-secondary-color hover:bg-accent-color px-2 rounded-sm cursor-pointer"
+          className="hover:text-secondary-color hover:bg-accent-color px-4 rounded-xl cursor-pointer"
         >
           Projects
         </Link>
-        <li className="hover:text-secondary-color hover:bg-accent-color px-2 rounded-sm cursor-pointer">
+        <Link
+          href="#contact"
+          className="hover:text-secondary-color hover:bg-accent-color px-4 rounded-xl cursor-pointer"
+        >
           Contact
-        </li>
+        </Link>
       </ul>
     </nav>
   );

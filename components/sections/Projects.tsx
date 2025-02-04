@@ -15,7 +15,7 @@ export default async function Projects() {
   return (
     <section
       id="projects"
-      className="h-[calc(100dvh-2.5rem)] mt-10 border-t overflow-hidden border-secondary-color flex flex-col items-center py-4"
+      className="h-[calc(100dvh-2.5rem)] overflow-hidden flex flex-col items-center justify-center"
     >
       <h4 className={`${secondaryFont.className} text-6xl`}>
         Personal Projects
