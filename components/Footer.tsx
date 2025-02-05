@@ -3,7 +3,7 @@ import { BsLinkedin } from "react-icons/bs";
 import { MdMarkEmailUnread } from "react-icons/md";
 
 import ScrollTopBtn from "./ui/ScrollTopBtn";
-import { secondaryFont } from "@/app/layout";
+import { secondaryFont } from "@/public/fonts/fonts";
 
 export default function Footer() {
   return (

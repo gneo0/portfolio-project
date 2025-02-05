@@ -1,5 +1,5 @@
+import { secondaryFont } from "@/public/fonts/fonts";
 import Banner from "../Banner";
-import { secondaryFont } from "@/app/layout";
 
 export default function Hero() {
   return (

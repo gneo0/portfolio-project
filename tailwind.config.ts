@@ -23,9 +23,9 @@ export default {
           "100%": { transform: "translateX(-50%)" },
         },
         "fade-down": {
-          "0%": { opacity: "0", top: "-2rem", width: "80%" },
+          "0%": { opacity: "0", left: "50%", width: "80%" },
           "50%": { width: "40%", opacity: "0.3" },
-          "100%": { opacity: "1", top: "0.5rem" },
+          "100%": { opacity: "1" },
         },
       },
       animation: {

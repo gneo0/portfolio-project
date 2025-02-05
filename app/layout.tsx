@@ -1,17 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Poppins } from "next/font/google";
-import localFont from "next/font/local";
 import Navbar from "@/components/Navbar";
 import ParticlesBackground from "@/components/ui/ParticlesBackground";
-
-export const secondaryFont = localFont({
-  src: "../public/fonts/Philosopher-Regular.ttf",
-});
-
-export const mainFont = Poppins({
-  weight: ["400"],
-});
+import { mainFont } from "@/public/fonts/fonts";
 
 // TODO:
 export const metadata: Metadata = {

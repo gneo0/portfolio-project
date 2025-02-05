@@ -1,4 +1,4 @@
-import { secondaryFont } from "@/app/layout";
+import { secondaryFont } from "@/public/fonts/fonts";
 import { TECHNOLOGIES } from "@/utils/constants";
 
 export default function About() {

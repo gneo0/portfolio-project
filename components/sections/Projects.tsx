@@ -3,8 +3,8 @@ import Image from "next/image";
 import { MdOutlineOpenInNew } from "react-icons/md";
 
 import getRepos from "@/app/services/api";
-import { secondaryFont } from "@/app/layout";
 import { SELECTED_REPOS } from "@/utils/constants";
+import { secondaryFont } from "@/public/fonts/fonts";
 
 export default async function Projects() {
   const projects = await getRepos();
