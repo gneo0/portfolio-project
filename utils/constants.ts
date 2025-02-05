@@ -25,4 +25,4 @@ export const TECHNOLOGIES = [
   "Go",
 ];
 
-export const SELECTED_REPOS = ["regal-hive", "TaskFlow-pro", "Movie--Verse"];
+export const SELECTED_REPOS = ["Regal-hive", "TaskFlow-pro", "Movie-Verse"];
