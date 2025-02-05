@@ -7,6 +7,7 @@ import { SELECTED_REPOS } from "@/utils/constants";
 import { secondaryFont } from "@/public/fonts/fonts";
 
 export default async function Projects() {
+   return
   const projects = await getRepos();
   const filteredProjects = projects.filter((project) =>
     SELECTED_REPOS.includes(project.name)

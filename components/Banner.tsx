@@ -8,7 +8,6 @@ export default function Banner() {
           ...BANNER_ADJECTIVES,
           ...BANNER_ADJECTIVES,
           ...BANNER_ADJECTIVES,
-          ...BANNER_ADJECTIVES,
         ].map((adjective, i) => (
           <li
             key={adjective + i}

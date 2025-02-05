@@ -29,7 +29,7 @@ export default {
         },
       },
       animation: {
-        "scroll-x-positive": "scroll-x-positive 35s linear infinite",
+        "scroll-x-positive": "scroll-x-positive 45s linear infinite both",
         "scroll-x-negative": "scroll-x-negative 80s linear infinite both",
         "fade-down": "fade-down 0.5s linear",
       },

@@ -24,8 +24,7 @@ export default function Navbar() {
           : " w-full"
       }`}
     >
-      <Link
-        href="#hero"
+      <h1
         className={`${
           secondaryFont.className
         } hover:text-secondary-color hover:bg-accent-color cursor-pointer font-semibold px-3 rounded-sm text-xl bg-secondary-color ${
@@ -33,18 +32,18 @@ export default function Navbar() {
         }`}
       >
         GN.
-      </Link>
+      </h1>
       <ul
         className={`sm:flex space-x-4 ${
           isScrolled ? "justify-center py-1" : "hidden sm:flex"
         }`}
       >
-        <a
+        <Link
           href="#about"
           className="hover:text-secondary-color hover:bg-accent-color px-3 rounded-lg cursor-pointer transition-colors ease-in-out"
         >
           About
-        </a>
+        </Link>
         <Link
           href="#projects"
           className="hover:text-secondary-color hover:bg-accent-color px-3 rounded-lg cursor-pointer transition-colors ease-in-out"
