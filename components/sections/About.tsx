@@ -5,9 +5,9 @@ export default function About() {
   return (
     <section
       id="about"
-      className="h-[calc(100dvh-2.5rem)] sm:flex-row relative flex flex-col items-center justify-center gap-2 px-4 bg-primary-color/60 border-b border-secondary-color"
+      className="sm:flex-row h-[39rem] relative flex flex-col items-center justify-center gap-2 p-4 bg-primary-color/60 border-b border-secondary-color md:px-7 xl:gap-10"
     >
-      <article className="sm:w-2/3 sm:h-1/2 flex flex-col justify-center h-full space-y-4">
+      <article className="sm:w-2/3 h-1/2 flex flex-col justify-center max-w-2xl space-y-2">
         <h2
           className={`sm:text-7xl text-6xl text-accent-color ${secondaryFont.className}`}
         >
@@ -29,16 +29,22 @@ export default function About() {
           </span>
         </div>
       </article>
-      <div className="w-full flex flex-col h-1/2 sm:w-[60%] rounded-b-xl shadow-sm shadow-secondary-color overflow-hidden sm:h-1/2">
-        <h3 className="text-secondary-color py-2 bg-accent-color text-center rounded-t-md">
+      <div className="w-full flex flex-col h-1/2 sm:w-[60%] rounded-b-xl shadow-sm shadow-secondary-color overflow-hidden sm:h-1/2 max-w-lg">
+        <h3 className="text-secondary-color bg-accent-color rounded-t-md py-2 text-center">
           Technologies i use:
         </h3>
         <ul
-          className={`${secondaryFont.className} grid grid-cols-[repeat(auto-fit,minmax(100px,1fr))] h-full min-[595px]:grid-cols-2 text-center mt-2`}
+          className={`${secondaryFont.className} grid grid-cols-[repeat(auto-fit,minmax(140px,1fr))] h-full text-center mt-2`}
         >
-          {TECHNOLOGIES.map((tech) => (
-            <li key={tech} className="hover:bg-secondary-color pt-2">
-              {tech}
+          {TECHNOLOGIES.map(({ name, Icon }) => (
+            <li
+              key={name}
+              className="hover:bg-secondary-color justify-stretch flex items-center gap-2 pl-2"
+            >
+              <span>
+                <Icon />
+              </span>
+              {name}
             </li>
           ))}
         </ul>
