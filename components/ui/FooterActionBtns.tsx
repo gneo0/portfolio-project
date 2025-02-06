@@ -4,7 +4,7 @@ import { MdMarkEmailUnread } from "react-icons/md";
 
 export default function FooterActionBtns() {
   return (
-    <div className="flex gap-2">
+    <div className="flex gap-2 mx-auto">
       <Link
         href="mailto:geo_nio@hotmail.com"
         className="bg-primary-color rounded-md shadow-md shadow-primary-color/30 hover:text-secondary-color hover:bg-accent-color relative z-50 flex items-center gap-2 p-2 px-4 mt-8 overflow-hidden transition ease-in-out"

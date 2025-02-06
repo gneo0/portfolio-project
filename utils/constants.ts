@@ -14,6 +14,12 @@ import {
 } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 
+export const NAV_LINKS = [
+  { path: "#about", name: "About" },
+  { path: "#projects", name: "Projects" },
+  { path: "#contact", name: "Contact" },
+];
+
 export const BANNER_ADJECTIVES = [
   "Disciplined",
   "Self-Driven",

@@ -1,20 +1,10 @@
 "use client";
-import Link from "next/link";
-import { useEffect, useState } from "react";
-
-import { secondaryFont } from "@/public/fonts/fonts";
+import Logo from "./ui/Logo";
+import NavLinksList from "./NavLinksList";
+import { useScroll } from "@/hooks/useScroll";
 
 export default function Navbar() {
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () =>
-      setIsScrolled(window.scrollY >= window.innerHeight - 700);
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const { isScrolled } = useScroll();
 
   return (
     <nav
@@ -24,39 +14,8 @@ export default function Navbar() {
           : " w-full animate-opacity-down"
       }`}
     >
-      <h1
-        className={`${
-          secondaryFont.className
-        } hover:text-secondary-color hover:bg-accent-color cursor-pointer font-semibold px-3 rounded-sm text-xl bg-secondary-color ${
-          isScrolled ? "hidden opacity-0 transition-opacity ease-linear" : ""
-        }`}
-      >
-        GN.
-      </h1>
-      <ul
-        className={`sm:flex space-x-4 ${
-          isScrolled ? "justify-center py-1" : "hidden sm:flex"
-        }`}
-      >
-        <Link
-          href="#about"
-          className="hover:text-secondary-color hover:bg-accent-color px-3 rounded-lg cursor-pointer transition-colors ease-in-out"
-        >
-          About
-        </Link>
-        <Link
-          href="#projects"
-          className="hover:text-secondary-color hover:bg-accent-color px-3 rounded-lg cursor-pointer transition-colors ease-in-out"
-        >
-          Projects
-        </Link>
-        <Link
-          href="#contact"
-          className="hover:text-secondary-color hover:bg-accent-color px-3 rounded-lg cursor-pointer transition-colors ease-in-out"
-        >
-          Contact
-        </Link>
-      </ul>
+      <Logo />
+      <NavLinksList />
     </nav>
   );
 }
