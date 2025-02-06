@@ -30,12 +30,12 @@ export default function Hero() {
           Hello, I&apos;m Giorgos Neofitou.
         </span>
       </div>
-      <p className="w-[95%] max-w-3xl mt-6">
+      <p className="w-[95%] max-w-3xl mt-6 animate-opacity-up">
         Full-stack developer who transforms lines of code into dynamic digital
         solutions. Dedicated to crafting innovative web experiences that solve
         real-world problems with elegant & efficient technology.
       </p>
-      <div className="sm:flex-row flex flex-col items-center justify-center gap-6 mt-8">
+      <div className="sm:flex-row flex flex-col items-center justify-center gap-6 mt-8 animate-opacity-up">
         <p>
           <span className="w-2 h-2 rounded-full bg-secondary-color mb-[0.1rem] animate-pulse inline-block mr-2"></span>
           Open To Work
