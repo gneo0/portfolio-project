@@ -7,4 +7,5 @@ export const secondaryFont = localFont({
 
 export const mainFont = Poppins({
   weight: ["400"],
+  subsets: ["latin-ext"],
 });

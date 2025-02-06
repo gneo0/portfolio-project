@@ -5,24 +5,25 @@ import { MdOutlineOpenInNew } from "react-icons/md";
 import getRepos from "@/app/services/api";
 import { SELECTED_REPOS } from "@/utils/constants";
 import { secondaryFont } from "@/public/fonts/fonts";
+import { Project } from "@/typings";
 
 export default async function Projects() {
-   return
+  //  return
   const projects = await getRepos();
-  const filteredProjects = projects.filter((project) =>
+  const filteredProjects = projects.filter((project: Project) =>
     SELECTED_REPOS.includes(project.name)
   );
 
   return (
     <section
       id="projects"
-      className="h-[calc(100dvh-2.5rem)] overflow-hidden flex flex-col items-center justify-center py-4"
+      className="h-[50rem] overflow-hidden flex flex-col items-center justify-center py-4"
     >
       <h4 className={`${secondaryFont.className} sm:text-6xl text-4xl`}>
         Personal Projects
       </h4>
-      <ul className="w-11/12 max-w-3xl mt-6 overflow-y-auto">
-        {filteredProjects.map((project) => (
+      <ul className="w-11/12 max-w-3xl overflow-y-auto">
+        {filteredProjects.map((project: Project) => (
           <li
             key={project.id}
             className="sm:flex-row sm:justify-center bg-primary-color flex flex-col items-center justify-start w-full gap-4 p-4 mx-auto mt-4 overflow-hidden rounded-md"
