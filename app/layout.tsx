@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import ParticlesBackground from "@/components/ui/ParticlesBackground";
 import { mainFont } from "@/public/fonts/fonts";
+import Footer from "@/components/Footer";
 
 // TODO:
 export const metadata: Metadata = {
@@ -24,7 +25,7 @@ export default function RootLayout({
         <ParticlesBackground />
         <Navbar />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );

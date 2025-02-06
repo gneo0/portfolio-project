@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <section
       id="contact"
-      className="h-96 relative bg-secondary-color rounded-t-2xl"
+      className="h-96 bg-secondary-color rounded-t-2xl relative"
     >
       <div className="flex flex-col items-center w-11/12 max-w-xl gap-1 pt-12 mx-auto text-center">
         <h5 className={`text-4xl ${secondaryFont.className}`}>
@@ -22,7 +22,7 @@ export default function Footer() {
         <div className="flex gap-2">
           <Link
             href="mailto:geo_nio@hotmail.com"
-            className="flex relative items-center gap-2 z-50 bg-primary-color transition ease-in-out overflow-hidden p-2 px-4 rounded-xl hover:text-secondary-color hover:bg-accent-color mt-8"
+            className="bg-primary-color rounded-md shadow-md shadow-primary-color/30 hover:text-secondary-color hover:bg-accent-color relative z-50 flex items-center gap-2 p-2 px-4 mt-8 overflow-hidden transition ease-in-out"
           >
             <span>
               <MdMarkEmailUnread />
@@ -32,7 +32,7 @@ export default function Footer() {
           <Link
             href="https://www.linkedin.com/in/giorgos-neofitou/"
             target="_blank"
-            className="flex relative items-center gap-2 z-50 bg-primary-color transition ease-in-out overflow-hidden p-2 px-4 rounded-xl hover:text-secondary-color hover:bg-accent-color mt-8"
+            className="bg-primary-color rounded-md shadow-md shadow-primary-color/30 hover:text-secondary-color hover:bg-accent-color relative z-50 flex items-center gap-2 p-2 px-4 mt-8 overflow-hidden transition ease-in-out"
           >
             <span>
               <BsLinkedin />
