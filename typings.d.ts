@@ -5,3 +5,12 @@ export type Project = {
   html_url: string;
   homepage: string;
 };
+
+export type Adjective = {
+  adjective: string;
+};
+
+export type TechnologyProps = {
+  children: React.ReactNode;
+  name: string;
+};
