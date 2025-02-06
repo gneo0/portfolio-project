@@ -13,8 +13,10 @@ export default function ProjectContainer({ project }: { project: Project }) {
         src={`/${project.name}-mockup.png`}
         alt={`${project.name} photo`}
       />
-      <ProjectText project={project} />
-      <ProjectActionBtns project={project} />
+      <div className="flex flex-col justify-between w-full gap-4">
+        <ProjectText project={project} />
+        <ProjectActionBtns project={project} />
+      </div>
     </li>
   );
 }
