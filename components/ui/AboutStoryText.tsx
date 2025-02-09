@@ -5,10 +5,11 @@ export default function AboutStoryText() {
         &#10077;
       </span>
       <blockquote className="ml-2">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nisi
-        molestias, soluta ab debitis consectetur ducimus reprehenderit maxime
-        pariatur neque dolore iste tenetur excepturi repudiandae! Mollitia
-        consectetur itaque voluptatum asperiores.
+        My journey into full-stack development began with a project for my
+        family&apos;s business, sparking a passion for coding. Now, I build dynamic,
+        user-friendly applications that solve real problems and bring ideas to
+        life. I&apos;m always passionate about learning new technologies &
+        contributing to open-source.
       </blockquote>
       <span className="right-1 -bottom-5 text-secondary-color absolute text-6xl">
         &#10078;

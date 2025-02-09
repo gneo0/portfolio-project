@@ -8,7 +8,7 @@ export default function FooterText() {
       </h5>
       <p>
         Feel free to contact me if having any questions. I&apos;m available for
-        new projects or just for chatting
+        new projects or just for chatting.
       </p>
     </div>
   );

@@ -5,9 +5,14 @@ export default function HeroAction() {
         <span className="w-2 h-2 rounded-full bg-secondary-color mb-[0.1rem] animate-pulse inline-block mr-2"></span>
         Open To Work
       </p>
-      <button className="border-accent-color hover:bg-secondary-color px-4 py-2 transition-colors ease-linear border rounded">
+      <a
+        download
+        href="/resume-file.pdf"
+        aria-label="Download resume"
+        className="border-accent-color hover:bg-secondary-color px-4 py-2 transition-colors ease-linear border rounded"
+      >
         Download Resume
-      </button>
+      </a>
     </div>
   );
 }

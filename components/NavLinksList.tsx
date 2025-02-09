@@ -6,7 +6,7 @@ export default function NavLinksList() {
   const { isScrolled } = useScroll();
 
   return (
-    <ul
+    <nav
       className={`sm:flex space-x-4 ${
         isScrolled ? "justify-center py-1" : "hidden sm:flex"
       }`}
@@ -20,6 +20,6 @@ export default function NavLinksList() {
           {link.name}
         </Link>
       ))}
-    </ul>
+    </nav>
   );
 }
