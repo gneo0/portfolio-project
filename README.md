@@ -1,4 +1,4 @@
-# Personal Portofolio Project
+# Personal Portfolio Project
 
 Welcome to my personal portfolio! This website showcases my skills, projects, and accomplishments. It is built using Next.js, a popular React framework, with modern web development practices and design patterns.
 
@@ -16,13 +16,13 @@ To run the project locally, follow these steps:
 1. Clone the repo
 
 ```bash
-git clone https://github.com/gneo0/portofolio-project
+git clone https://github.com/gneo0/portfolio-project
 ```
 
 2. Navigate to project directory
 
 ```bash
-cd portofolio
+cd portfolio-project
 ```
 
 3. Install dependencies
