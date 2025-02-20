@@ -48,7 +48,7 @@ export const TECHNOLOGIES = [
   { name: "Go", Icon: FaGolang },
 ];
 
-export const SELECTED_REPOS = ["Regal-hive", "TaskFlow-pro", "Movie-Verse"];
+export const SELECTED_REPOS = ["Regal-hive", "TaskFlow-pro", "Movie-verse"];
 
 export const PARTICLES_OPTIONS: ISourceOptions = {
   autoPlay: true,
