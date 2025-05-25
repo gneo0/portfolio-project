@@ -7,7 +7,7 @@ export default function HeroAction() {
       </p>
       <a
         download
-        href="/resume-file.pdf"
+        href="/giorgos_neofitou_resume.pdf"
         aria-label="Download resume"
         className="border-accent-color hover:bg-secondary-color px-4 py-2 transition-colors ease-linear border rounded"
       >

@@ -1,5 +1,5 @@
 import { TbBrandThreejs } from "react-icons/tb";
-import { FaGolang, FaHtml5, FaCss3Alt, FaNodeJs } from "react-icons/fa6";
+import { FaHtml5, FaCss3Alt, FaNodeJs } from "react-icons/fa6";
 import {
   SiJavascript,
   SiTailwindcss,
@@ -11,6 +11,7 @@ import {
   SiPostgresql,
   SiRedux,
   SiReactquery,
+  SiPython
 } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 import { ISourceOptions } from "@tsparticles/engine";
@@ -45,7 +46,7 @@ export const TECHNOLOGIES = [
   { name: "Redux", Icon: SiRedux },
   { name: "Tanstack", Icon: SiReactquery },
   { name: "Three.js", Icon: TbBrandThreejs },
-  { name: "Go", Icon: FaGolang },
+  { name: "Python", Icon: SiPython },
 ];
 
 export const SELECTED_REPOS = ["Regal-hive", "TaskFlow-pro", "Movie-verse"];
